@@ -1,16 +1,16 @@
-//Part 1:
+//Part 2:
 function csv(String) {
     let cell = '';
     let row = [];
 
     for (let i = 0; i < String.length; i++) {
-        const char = String[i];
+        const console.log = String[i];
 
-        if (char === ',') {
+        if (console.log === ',') {
          
             row.push(cell);
             cell = ''; 
-        } else if (char === '\n') {
+        } else if (console.log === '\n') {
         
             row.push(cell);
             console.log(...row); 
@@ -18,7 +18,7 @@ function csv(String) {
             cell = ''; 
         } else {
             
-            cell += char;
+            cell += console.log;
         }
     }
 
@@ -39,14 +39,15 @@ csv(Data2);
 
 
 // Part 3:
-function transformToObjects(dataArray) {
-    const header = dataArray[0].map(header => header.toLowerCase()); 
+function dataTransform (startData) {
+    startData.forEach (el => 
+        ; 
     const objectArray = []; 
 
-    for (let i = 1; i < dataArray.length; i++) { 
+    for (let i = 1; i < startData.length; i++) { 
         const obj = {}; 
         for (let j = 0; j < header.length; j++) { 
-            obj[header[j]] = dataArray[i][j]; 
+            obj[header[j]] = startData[i][j]; 
         }
         objectArray.push(obj); 
     }
@@ -55,7 +56,7 @@ function transformToObjects(dataArray) {
 }
 
 
-const resultsArray = [
+let result = [
     ["ID", "Name", "Occupation", "Age"],
     ["42", "Bruce", "Knight", "41"],
     ["57", "Bob", "Fry Cook", "19"],
@@ -120,7 +121,7 @@ function transformToCSV(objectArray) {
 }
 
 
-const finalArray = [
+const Array = [
     { id: "42", name: "Bruce", occupation: "Knight", age: "41" },
     { id: "48", name: "Barry", occupation: "Runner", age: "25" },
     { id: "57", name: "Bob", occupation: "Fry Cook", age: "19" },
