@@ -101,22 +101,22 @@ console.log('Average Age:', averageAge);
 
 
 // Part 5:
-function transformToCSV(objectsArray) {
+function transformToCSV(objectArray) {
  
-    if (objectsArray.length === 0) {
+    if (objectArray.length === 0) {
         return '';
     }
 
    
-    const headers = Object.keys(objectsArray[0]).join(','); 
+    const header = Object.keys(objectArray[0]).join(','); 
 
     
-    const csvRows = objectsArray.map(obj => {
+    const csvRows = objectArray.map(obj => {
         return Object.values(obj).join(','); 
     });
 
     
-    return [headers, ...csvRows].join('\n');
+    return [header, ...csvRows].join('\n');
 }
 
 
