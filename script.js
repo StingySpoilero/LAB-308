@@ -76,8 +76,8 @@ let result = [
 ];
 }
 //Part 4:
-{const newArray = transformToObjects(resultsArray);
-console.log(newArray);
+{const newArray = startData(Array);
+console.log(Array);
 }
 
 let newArray = [
@@ -101,38 +101,29 @@ console.log(newArray);
 
 let totalAge = 0;
 
-for (const obj of newArray) {
+for (Object.newArray) {
     totalAge += parseInt(obj.age, 10);
 }
 
 
-const averageAge = totalAge / newArray.length;
+let averageAge = totalAge / newArray.length;
 
 
 console.log('Average Age:', averageAge);
 
 
 // Part 5:
-function transformToCSV(newArray) {
+function startData(newArray) {
  
     if (newArray.length === 0) {
         return '';
     }
 
    
-    const header = Object.keys(newArray[0]).join(','); 
-
-    
-    const csvRows = newArray.map(obj => {
-        return Object.values(obj).join(','); 
-    });
-
-    
-    return [header, ...csvRows].join('\n');
 }
 
 
-const Array = [
+let Array = [
     { id: "42", name: "Bruce", occupation: "Knight", age: "41" },
     { id: "48", name: "Barry", occupation: "Runner", age: "25" },
     { id: "57", name: "Bob", occupation: "Fry Cook", age: "19" },
@@ -140,5 +131,5 @@ const Array = [
 ];
 
 
-const finalCSV = transformToCSV(finalArray);
-console.log(finalCSV);
+let array
+console.log();
